@@ -1,112 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Chidambaram Sri - Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <fieldset>
-        <center>
-            <h1><i>Chidambaram's Portfolio</i></h1>
-            <table  width="1100"style="text-align: center ; background-color:#55a5e1;"style="border-color:red"> 
-                <tr>
-                    <th><a href="#about" style="background-color:#55a5e1;color: aliceblue;">About Me</a></th>
-                    <th><a href="#Skills"style="background-color: #55a5e1; color: aliceblue;">Skills</a></th>
-                    <th><a href="#Coding Platforms"style="background-color:#55a5e1; color: aliceblue;">Coding Platforms</a></th>
-                    <th><a href="#Certificates" style="background-color:#55a5e1;color: aliceblue;">Certificates</a></th>
-                    <th><a href="#Projects" style="background-color:#55a5e1;color: aliceblue;">Projects</a></th>
-                    <th><a href="#Contact"style="background-color:#55a5e1;color: aliceblue;">Contact</a></th>
-                </tr>
-            </table><br>
-        </center>
 
-        <center>
-                <img src="./WhatsApp Image 2025-06-04 at 11.53.21 AM.jpeg" alt="Profile Photo" width="200" style=" border-radius: 20px;">
+    <div class="main-card">
+
+        <!-- Header -->
+        <header class="d-flex justify-content-between align-items-center mb-5">
+            <a href="#" class="header-name">Chidambaram Sri</a>
+            <div class="d-flex align-items-center">
+                <!-- Theme Toggle -->
+                <div id="theme-toggle" class="theme-toggle me-3" title="Toggle Dark Mode">
+                    <i class="bi bi-moon-fill"></i>
+                </div>
+                <!-- Social Links -->
+                <a href="https://github.com/Chidambaram2701" target="_blank" class="social-link" title="GitHub"><i
+                        class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/in/chidambaramsri" target="_blank" class="social-link" title="LinkedIn"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="mailto:sneelusri@gmail.com"
+                    class="btn btn-primary rounded-pill px-4 ms-3 d-none d-sm-block">Email Me</a>
+                <a href="mailto:sneelusri@gmail.com" class="social-link d-sm-none"><i
+                        class="bi bi-envelope-fill"></i></a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start mb-5 mb-lg-0">
+                    <h1 class="hero-title">Hi, I’m Chidambaram 👋</h1>
+                    <p class="hero-subtitle">
+                        AI & Full-Stack Developer <br>
+                        Building scalable and modern web applications.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#skills" class="btn btn-outline-custom">Skills</a>
+                        <a href="#projects" class="btn btn-outline-custom">Projects</a>
+                        <a href="#contact" class="btn btn-outline-custom">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="profile-container">
+                        <img src="profile.jpeg" alt="Chidambaram Sri" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-5">
+            <h2 class="section-title">Skills</h2>
+            <p class="text-secondary mb-4">A snapshot of the technologies and tools I work with.</p>
+
+            <div class="mb-4">
+                <h5 class="fw-bold mb-3">Languages & Frameworks</h5>
+                <div>
+                    <span class="skill-badge"><i class="bi bi-filetype-html"></i> HTML5</span>
+                    <span class="skill-badge"><i class="bi bi-filetype-css"></i> CSS3</span>
+                    <span class="skill-badge"><i class="bi bi-filetype-js"></i> JavaScript</span>
+                    <span class="skill-badge"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+                    <span class="skill-badge"><i class="bi bi-filetype-java"></i> Java</span>
+                    <span class="skill-badge"><i class="bi bi-filetype-py"></i> Python</span>
+                    <span class="skill-badge"><i class="bi bi-database"></i> SQL</span>
+                </div>
+            </div>
+
             <div>
-                <h1>Chidambaram N</h1>
-                <img src="./images (1).png " width="45px" style="border-radius: 5px;"p>&nbsp;&nbsp;
-                <img src="./github.png" width="45px" style="border-radius: 5px;">&nbsp;&nbsp;
-                <img src="./gmail-new-logo-icon.png" width="45px" style="border-radius: 5px;"><br>
-                <h>linked</h> | <h> github</h> | <h>Email</h>
-            </div><hr>
-        </centre>
+                <h5 class="fw-bold mb-3">Tools & Platforms</h5>
+                <div>
+                    <span class="skill-badge"><i class="bi bi-git"></i> Git</span>
+                    <span class="skill-badge"><i class="bi bi-github"></i> GitHub</span>
+                    <span class="skill-badge"><i class="bi bi-terminal"></i> VS Code</span>
+                </div>
+            </div>
+        </section>
 
-        <center>
-            <h1 id="about">About Me</h1>
-            <p>Hi, I’m Chidambaram N, a Computer Science student who loves coding and solving problems. I enjoy building smart systems using technologies like Java, databases, and artificial intelligence. I’m always curious to learn new things and improve my skills. My goal is to create useful and efficient solutions that can make a difference through technology.</p>
-            <hr>
-            <h1 id="Skills">Skills</h1>
-            <div style="display: flex; margin: 0px 350px ;">
-                <table>
-                    <tr><th>Programming Languages & Database</th></tr>
-                    <tr><td >C</td></tr>
-                    <tr><td>C++</td></tr>
-                    <tr><td>Python</td></tr>
-                    <tr><td>Java</td></tr>
-                    <tr><td>SQL</td></tr>
-                </table>
-                <table >
-                    <tr><th>Tools & Platforms</th></tr>
-                    <tr><td>Git</td></tr>
-                    <tr><td>GitHub</td></tr>
-                    <tr><td>VS Code</td></tr>
-                    <tr><td>Terminal / Command Line</td></tr>
-                </table>
-                <table>
-                    <tr><th>Soft Skills</th></tr>
-                    <tr><td>Problem-solving</td></tr>
-                    <tr><td>Team collaboration</td></tr>
-                    <tr><td>Time management</td></tr>
-                </table>
-            </div><br>
-            <hr>
+        <!-- Projects Section (Optional) -->
+        <section id="projects" class="mb-5">
+            <h2 class="section-title">Projects</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h4 class="project-title">Smart Traffic Signal</h4>
+                            <i class="bi bi-stoplights-fill text-primary fs-4"></i>
+                        </div>
+                        <p class="project-desc mt-2">
+                            An IoT-based system to prioritize ambulance movement by automating traffic signals using GPS
+                            and sensor data. Reduces emergency response time.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-link text-decoration-none p-0 mt-2">View Details <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Add more project cards here -->
+                <!-- Project: Drowsiness Detection -->
+                <div class="col-md-6">
+                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h4 class="project-title">Drowsiness & Yawning Detection</h4>
+                            <i class="bi bi-eye-fill text-primary fs-4"></i>
+                        </div>
+                        <p class="project-desc mt-2 mb-3">
+                            An AI-based driver safety system that detects drowsiness and yawning using deep neural
+                            networks and computer vision. Triggers an alert sound in real time.
+                        </p>
+                        <div class="mb-3 mt-auto">
+                            <span class="badge bg-light text-secondary border">Python</span>
+                            <span class="badge bg-light text-secondary border">OpenCV</span>
+                            <span class="badge bg-light text-secondary border">CNN</span>
+                        </div>
+                        <a href="https://github.com/Chidambaram2701/Drowsiness-and-Yawning-Detection-in-Drivers-with-alert-sound"
+                            target="_blank" class="btn btn-sm btn-link text-decoration-none p-0">View Project <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
 
-            <h1 id="Coding Platforms">Coding Platforms</h1>
-            <a href="https://codolio.com/profile/Chidambaram%20N" target="blank" style="border-radius: 20px;" ><img src="./7_QqhSKM_400x400.jpg" width="62" alt="Codolio"></a>&nbsp;&nbsp;
-            <a href="https://www.codechef.com/users/chidambaram10" target="blank"><img src="./codechef images.jpg" width="62" alt="CodeChef"></a>&nbsp;&nbsp;
-            <a href="https://leetcode.com/u/ChidambaramN/" target="blank">
-                <img src="./leetcode-icon-filled-256.png" width="62" alt="LeetCode"></a>&nbsp;&nbsp;
-            
-            <a href="https://www.hackerrank.com/profile/kit27_cse10" target="blank">
-                <img src="./images.png" width="65" alt="HackerRank">
-            </a>
-            <p>Codolio | CodeChef | LeetCode | HackerRank</p>
-            <hr>
+                <!-- Project: Restaurant AI -->
+                <div class="col-md-6">
+                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h4 class="project-title">Restaurant AI Management</h4>
+                            <i class="bi bi-shop text-primary fs-4"></i>
+                        </div>
+                        <p class="project-desc mt-2 mb-3">
+                            An AI-powered restaurant management solution to improve operations such as order handling,
+                            inventory tracking, and decision support.
+                        </p>
+                        <div class="mb-3 mt-auto">
+                            <span class="badge bg-light text-secondary border">Python</span>
+                            <span class="badge bg-light text-secondary border">AI/ML</span>
+                        </div>
+                        <a href="https://github.com/Chidambaram2701" target="_blank"
+                            class="btn btn-sm btn-link text-decoration-none p-0">View Project <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
 
-            <h1 id="Projects">Projects</h1>
-            <ul style="text-align: left; width: 70%;">
-                <li>
-                    <b>Smart Traffic Signal System for Ambulance</b><br><br>
-                    The Smart Traffic Signal System is a helpful system designed to make sure ambulances can reach hospitals quickly and safely. In many cities, ambulances get stuck in traffic, which causes delays and can be dangerous for patients. This system solves that problem by giving the ambulance a clear path using smart traffic lights.<br><br>
-                    The system works by using GPS or sensors to find where the ambulance is and in which direction it is moving. When the ambulance is nearby, the system sends a signal to the traffic lights on its route. These traffic signals then turn green, allowing the ambulance to move through traffic without stopping.<br><br>
-                    The control system receives all the signals and changes the lights at the right time. Other vehicles are stopped by red lights, so the road becomes clear for the ambulance. This reduces traffic jams, saves time, and helps the patient receive medical care faster.
-                </li>
-            </ul>
-            <hr>
+                <!-- Project: Cozy Cafe -->
+                <div class="col-md-6">
+                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h4 class="project-title">Cozy Cafe Website</h4>
+                            <i class="bi bi-cup-hot-fill text-primary fs-4"></i>
+                        </div>
+                        <p class="project-desc mt-2 mb-3">
+                            A modern and responsive cafe website showcasing menu items, ambiance, and contact details
+                            with a clean UI and smooth user experience.
+                        </p>
+                        <div class="mb-3 mt-auto">
+                            <span class="badge bg-light text-secondary border">HTML</span>
+                            <span class="badge bg-light text-secondary border">CSS</span>
+                            <span class="badge bg-light text-secondary border">Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/Chidambaram2701/cafe" target="_blank"
+                            class="btn btn-sm btn-link text-decoration-none p-0">View Project <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h1 id="Certificates">Certificates</h1>
-            <table >
-                <tr><th>Organization</th><th>Courses</th></tr>
-                <tr><td>Infosys</td><td>C Language Foundation<br>C++ Foundation<br>HTML and CSS Foundation<br>Java Foundation</td></tr>
-                <tr><td>Coursera</td><td>Python Foundation<br>Introduction to Web Development<br>Google Prompting Essentials</td></tr>
-                <tr><td>IBM</td><td>Web Development Fundamentals<br>Getting Started with Artificial Intelligence</td></tr>
-                <tr><td>Juniper</td><td>Open Learning</td></tr>
-                <tr><td>SimpleLearn</td><td>Introduction to Fundamentals of Databases</td></tr>
-                <tr><td>GUVI</td><td>ChatGPT for Everyone</td></tr>
-            </table>
-            <hr>
-            <footer>
-                <h1 id="Contact";>Contact</h1>
-            <p>
-                <img src="./phone-icon-symbol-sign-isolate-on-white-background-illustration-free-vector.jpg" width="20" style="background-color: #55a5e1;"> 
-                <h style="background-color:">9345339537</h><br><br>
-                <img src="./9e161945c411e58e7dcd6b7e8ef4b352_t.jpeg" width="20">
-                <a href="mailto:sneelusri@gmail.com">sneelusri@gmail.com</a></p>
-            </footer>
-            
-        </center>
-    </fieldset>
+        <!-- Coding Platforms Section -->
+        <section id="platforms" class="mb-5">
+            <h2 class="section-title">Coding Platforms</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-3 mt-2">
+                <div class="col">
+                    <a href="https://codolio.com/profile/Chidambaram%20N" target="_blank"
+                        class="card h-100 text-center p-3 text-decoration-none border-0 shadow-sm project-card">
+                        <div class="mx-auto mb-2"
+                            style="width: 50px; height: 50px; overflow: hidden; border-radius: 10px;">
+                            <img src="./7_QqhSKM_400x400.jpg" alt="Codolio" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <h6 class="text-primary mb-0">Codolio</h6>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.codechef.com/users/chidambaram10" target="_blank"
+                        class="card h-100 text-center p-3 text-decoration-none border-0 shadow-sm project-card">
+                        <div class="mx-auto mb-2"
+                            style="width: 50px; height: 50px; overflow: hidden; border-radius: 10px;">
+                            <img src="./codechef images.jpg" alt="CodeChef" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <h6 class="text-primary mb-0">CodeChef</h6>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://leetcode.com/u/ChidambaramN/" target="_blank"
+                        class="card h-100 text-center p-3 text-decoration-none border-0 shadow-sm project-card">
+                        <div class="mx-auto mb-2"
+                            style="width: 50px; height: 50px; overflow: hidden; border-radius: 10px;">
+                            <img src="./leetcode-icon-filled-256.png" alt="LeetCode"
+                                class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <h6 class="text-primary mb-0">LeetCode</h6>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.hackerrank.com/profile/kit27_cse10" target="_blank"
+                        class="card h-100 text-center p-3 text-decoration-none border-0 shadow-sm project-card">
+                        <div class="mx-auto mb-2"
+                            style="width: 50px; height: 50px; overflow: hidden; border-radius: 10px;">
+                            <img src="./images.png" alt="HackerRank" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <h6 class="text-primary mb-0">HackerRank</h6>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="footer">
+                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+
+                <div class="my-4">
+                    <p class="mb-2 fw-bold"><i class="bi bi-telephone-fill text-primary me-2"></i> 9345339537</p>
+                    <p class="fw-bold"><i class="bi bi-envelope-fill text-primary me-2"></i> sneelusri@gmail.com</p>
+                </div>
+
+                <div class="d-flex justify-content-center gap-4 mt-3 mb-4">
+                    <a href="mailto:sneelusri@gmail.com" class="text-decoration-none text-secondary">
+                        <i class="bi bi-envelope-fill fs-4"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/chidambaramsri" target="_blank"
+                        class="text-decoration-none text-secondary">
+                        <i class="bi bi-linkedin fs-4"></i>
+                    </a>
+                    <a href="https://github.com/Chidambaram2701" target="_blank"
+                        class="text-decoration-none text-secondary">
+                        <i class="bi bi-github fs-4"></i>
+                    </a>
+                </div>
+                <p class="small text-muted">&copy; 2024 Chidambaram Sri. All rights reserved.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
+
 </html>
