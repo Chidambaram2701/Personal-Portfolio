@@ -330,3 +330,28 @@ a {
         margin-bottom: 2rem;
     }
 }
+
+/* Platform Images */
+.platform-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    background: #fff;
+    padding: 5px;
+}
+
+.platform-link:hover .platform-img {
+    transform: translateY(-5px);
+}
+
+[data-theme="dark"] .btn-outline-dark {
+    color: #f8fafc;
+    border-color: #f8fafc;
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+    background-color: #f8fafc;
+    color: #0f172a;
+}
